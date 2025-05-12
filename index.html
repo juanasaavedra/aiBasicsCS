@@ -5,86 +5,362 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charla sobre Inteligencia Artificial - Deep Learning</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- HEADER -->
-    <header>
-        <div class="logo">
-            <h1>Charla sobre Inteligencia Artificial: Deep Learning</h1>
-            <p>Capítulo 1: Fundamentos de la IA y Deep Learning</p>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#section1">¿Por qué IA?</a></li>
-                <li><a href="#section2">¿Qué es la IA?</a></li>
-                <li><a href="#section3">Historia de la IA</a></li>
-                <li><a href="#section4">IA vs Métodos Tradicionales</a></li>
-                <li><a href="#section5">Aplicaciones de la IA</a></li>
-                <li><a href="#section6">Deep Learning y su Impacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- MAIN CONTENT -->
-    <main>
-        <!-- Section 1: ¿Por qué IA? -->
-        <section id="section1">
-            <h2>¿Por qué explorar la IA?</h2>
-            <p>La IA es clave en la Cuarta Revolución Industrial, mejorando la eficiencia y optimizando procesos en todos los sectores...</p>
-            <div class="graphic-placeholder" id="graphic1">
-                <p>Aquí va una infografía sobre las aplicaciones de la IA en diferentes sectores</p>
+    <div class="layout-flex">
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <i class="fas fa-brain"></i>
+                <span>AI Basics</span>
             </div>
-        </section>
-
-        <!-- Section 2: ¿Qué es la IA? -->
-        <section id="section2">
-            <h2>¿Qué es la IA?</h2>
-            <p>La IA intenta replicar la capacidad humana de pensar y aprender, a través de técnicas como redes neuronales y algoritmos...</p>
-            <div class="graphic-placeholder" id="graphic2">
-                <p>Aquí va una infografía sobre los tipos de IA: General vs Estrecha</p>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#section1"><i class="fas fa-question-circle"></i> ¿Por qué IA?</a></li>
+                    <li><a href="#section2"><i class="fas fa-robot"></i> ¿Qué es la IA?</a></li>
+                    <li><a href="#section3"><i class="fas fa-history"></i> Historia</a></li>
+                    <li><a href="#section4"><i class="fas fa-code-branch"></i> IA vs Tradicional</a></li>
+                    <li><a href="#section5"><i class="fas fa-cogs"></i> Aplicaciones</a></li>
+                    <li><a href="#section6"><i class="fas fa-network-wired"></i> Deep Learning</a></li>
+                    <li><a href="#section7"><i class="fas fa-calendar-alt"></i> Era Post-2020</a></li>
+                    <li><a href="#section8"><i class="fas fa-book-open"></i> Evolución de Modelos</a></li>
+                    <li><a href="#section9"><i class="fas fa-file-alt"></i> Modelos Fundamentales</a></li>
+                    <li><a href="#section10"><i class="fas fa-exclamation-circle"></i> Retos y Oportunidades</a></li>
+                    <li><a href="#section11"><i class="fas fa-crystal-ball"></i> Futuro de la IA</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- MAIN CONTENT -->
+        <main>
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <h1>AI Basics</h1>
+                <p>Capítulo 1: Fundamentos de la IA y Deep Learning</p>
             </div>
-        </section>
 
-        <!-- Section 3: Historia de la IA -->
-        <section id="section3">
-            <h2>Historia de la IA</h2>
-            <p>La historia de la IA ha pasado por momentos de gran optimismo seguidos de periodos de escepticismo, pero en la última década...</p>
-            <div class="graphic-placeholder" id="graphic3">
-                <p>Aquí va una infografía sobre la cronología de la IA y sus avances más importantes</p>
-            </div>
-        </section>
+            <!-- Section 1: ¿Por qué IA? -->
+            <section id="section1" class="fade-in">
+                <div class="section-header">
+                    <i class="fas fa-question-circle"></i>
+                    <h2>¿Por qué explorar la IA?</h2>
+                </div>
+                <p>La IA es el motor clave de la Cuarta Revolución Industrial. Está transformando industrias al mejorar la eficiencia, optimizar la toma de decisiones, automatizar tareas repetitivas y crear productos más inteligentes. Las aplicaciones de IA, como los asistentes virtuales y los vehículos autónomos, están demostrando cómo la tecnología puede mejorar nuestras vidas.</p>
+                <div class="content-grid">
+                    <div class="content-card" data-popup="popup-industrial">
+                        <i class="fas fa-industry"></i>
+                        <h3>Transformación Industrial</h3>
+                        <p>Mejora de procesos y automatización en todos los sectores.</p>
+                    </div>
+                    <div class="content-card" data-popup="popup-eficiencia">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Eficiencia</h3>
+                        <p>Optimización de recursos y toma de decisiones basada en datos.</p>
+                    </div>
+                    <div class="content-card" data-popup="popup-innovacion">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Innovación</h3>
+                        <p>Creación de nuevas soluciones y productos inteligentes.</p>
+                    </div>
+                </div>
+            </section>
 
-        <!-- Section 4: IA vs Métodos Tradicionales de Ingeniería -->
-        <section id="section4">
-            <h2>IA vs Métodos Tradicionales de Ingeniería</h2>
-            <p>La diferencia entre ambos métodos radica en cómo abordan los problemas: la física usa ecuaciones, mientras que la IA aprende de datos...</p>
-            <div class="graphic-placeholder" id="graphic4">
-                <p>Aquí va una infografía comparando métodos de IA vs Tradicionales</p>
-            </div>
-        </section>
+            <!-- Section 2: ¿Qué es la IA? -->
+            <section id="section2" class="fade-in">
+                <div class="section-header">
+                    <i class="fas fa-robot"></i>
+                    <h2>¿Qué es la IA?</h2>
+                </div>
+                <p>La IA es un campo de estudio de la computación que se ocupa de crear máquinas que pueden realizar tareas que requieren inteligencia humana. La IA abarca una variedad de técnicas, desde redes neuronales artificiales hasta algoritmos de búsqueda y optimización. Estas técnicas permiten que las máquinas aprendan, razonen y tomen decisiones.</p>
+                <h3>Clasificación de la IA:</h3>
+                <ul>
+                    <li><strong>IA General:</strong> También conocida como IA fuerte, es la capacidad de una máquina para realizar cualquier tarea cognitiva humana. Este tipo de IA sigue siendo un objetivo a largo plazo, con aplicaciones aún lejanas en el horizonte.</li>
+                    <li><strong><a href="#" class="popup-link" data-popup="popup-estrecha">IA Estrecha</a>:</strong> Se refiere a sistemas diseñados para realizar tareas específicas, como clasificación de imágenes o análisis de sentimientos, que son las aplicaciones que ya están impactando la vida cotidiana.</li>
+                </ul>
+                <div class="popup-links-group">
+                    <button class="popup-link cta-button" data-popup="popup-ml">Machine Learning (ML)</button>
+                    <button class="popup-link cta-button" data-popup="popup-dl">Deep Learning (DL)</button>
+                    <button class="popup-link cta-button" data-popup="popup-rl">Reinforcement Learning (RL)</button>
+                </div>
+            </section>
 
-        <!-- Section 5: Aplicaciones de la IA -->
-        <section id="section5">
-            <h2>Aplicaciones de la IA</h2>
-            <p>La IA tiene un impacto directo en aplicaciones como los autos autónomos, la medicina, los asistentes virtuales, entre otros...</p>
-            <div class="graphic-placeholder" id="graphic5">
-                <p>Aquí va una infografía sobre las aplicaciones de la IA en la vida cotidiana</p>
-            </div>
-        </section>
+            <!-- Section 3: Historia de la IA -->
+            <section id="section3" class="fade-in">
+                <div class="section-header">
+                    <i class="fas fa-history"></i>
+                    <h2>Historia de la IA</h2>
+                </div>
+                <p>La IA se originó en los años 50 con investigaciones como el Test de Turing de Alan Turing, que planteaba si las máquinas podían pensar. Durante las décadas siguientes, los avances en el cálculo y el análisis matemático permitieron a los investigadores empezar a construir modelos computacionales que imitaran procesos humanos.</p>
+                <h3>Períodos clave:</h3>
+                <ul>
+                    <li><strong>Primer invierno de la IA (1974-1980):</strong> A pesar de los avances iniciales, la IA enfrentó dificultades debido a las expectativas no cumplidas, lo que llevó a la disminución del financiamiento y la investigación en esta área.</li>
+                    <li><strong>Recuperación de la IA (1993-2011):</strong> A finales de los 90 y principios de 2000, los avances en potencia computacional y nuevas técnicas, como el aprendizaje supervisado y no supervisado, revivieron la investigación en IA.</li>
+                    <li><strong>El auge del Deep Learning (2011-presente):</strong> A partir de 2011, las redes neuronales profundas y el acceso a grandes volúmenes de datos permitieron grandes avances. Los algoritmos de deep learning comenzaron a superar los métodos tradicionales en tareas como el reconocimiento de imágenes.</li>
+                </ul>
+                <div class="graphic-placeholder" id="graphic3">
+                    <img src="./lineaTiempoIA.webp" alt="Línea de tiempo de la IA">
+                </div>
+            </section>
 
-        <!-- Section 6: Deep Learning y su Impacto -->
-        <section id="section6">
-            <h2>Deep Learning y su Impacto</h2>
-            <p>Desde la victoria de las redes neuronales convolucionales en el ILSVRC 2012, el deep learning ha transformado áreas como el reconocimiento de voz...</p>
-            <div class="graphic-placeholder" id="graphic6">
-                <p>Aquí va una infografía sobre el impacto de deep learning en la visión computacional y otras áreas</p>
-            </div>
-        </section>
-    </main>
+            <!-- Section 4: IA vs Métodos Tradicionales -->
+            <section id="section4" class="fade-in">
+                <div class="section-header">
+                    <i class="fas fa-code-branch"></i>
+                    <h2>IA vs Métodos Tradicionales de Ingeniería</h2>
+                </div>
+                <p>La ingeniería tradicional utiliza modelos matemáticos basados en leyes físicas para describir fenómenos y resolver problemas. La IA, en cambio, utiliza datos para generar modelos predictivos y tomar decisiones basadas en ellos. La diferencia clave radica en cómo se construyen y entrenan los modelos: en los métodos tradicionales, se utilizan ecuaciones predefinidas; en la IA, el modelo se aprende a partir de datos.</p>
+            </section>
+
+            <!-- Section 5: Aplicaciones de la IA -->
+            <section id="section5" class="fade-in">
+                <div class="section-header">
+                    <i class="fas fa-cogs"></i>
+                    <h2>Aplicaciones de la IA</h2>
+                </div>
+                <h3>Áreas principales de aplicación:</h3>
+                <ul>
+                    <li><strong>Automóviles autónomos:</strong> Los vehículos autónomos utilizan IA para procesar datos de sensores y cámaras para tomar decisiones en tiempo real. Estos vehículos son capaces de reconocer objetos, planificar rutas y realizar maniobras sin intervención humana.</li>
+                    <li><strong>Asistentes inteligentes:</strong> La IA aplicada a la voz y al reconocimiento facial ha permitido el desarrollo de asistentes como Siri, Alexa y Google Assistant. Estos asistentes pueden comprender comandos de voz y responder de manera adecuada, haciendo tareas como enviar mensajes o controlar dispositivos.</li>
+                    <li><strong>Salud:</strong> La IA está ayudando en el diagnóstico de enfermedades a partir de imágenes médicas, como resonancias magnéticas y radiografías. También está siendo utilizada para predecir la evolución de enfermedades y personalizar los tratamientos.</li>
+                    <li><strong>Robots industriales:</strong> Los robots en la manufactura están siendo equipados con IA para mejorar su eficiencia, detectando fallos y prediciendo tiempos de mantenimiento. Esto aumenta la productividad y reduce costos operativos.</li>
+                </ul>
+                <div class="graphic-placeholder" id="graphic5">
+                    <p>Infografía: Aplicaciones de la IA en la vida cotidiana y sectores industriales</p>
+                </div>
+            </section>
+
+            <!-- Section 6: Deep Learning y su Impacto -->
+            <section id="section6" class="fade-in">
+                <div class="section-header">
+                    <i class="fas fa-network-wired"></i>
+                    <h2>Deep Learning y su Impacto</h2>
+                </div>
+                <p>Deep learning ha transformado varios campos, destacándose especialmente en el reconocimiento visual. Un hito importante fue cuando una red convolucional (CNN) ganó el Imagenet Large Scale Visual Recognition Challenge (ILSVRC) por primera vez en 2012, reduciendo la tasa de error de top-5 del 26.1% al 15.3%.</p>
+                <h3>Avances clave:</h3>
+                <ul>
+                    <li><strong>Reconocimiento de Voz:</strong> La introducción de redes neuronales profundas redujo significativamente las tasas de error, permitiendo avances en la precisión de los asistentes de voz.</li>
+                    <li><strong>Detección y Segmentación:</strong> Las redes neuronales profundas han mostrado resultados sobresalientes en detección de peatones y segmentación de imágenes, cruciales para sistemas de conducción autónoma y análisis médico.</li>
+                    <li><strong>Aprendizaje Secuencia-a-Secuencia:</strong> El modelo LSTM ha revolucionado la traducción automática y otros campos donde la relación entre los datos no es estática.</li>
+                    <li><strong>Reinforcement Learning:</strong> La combinación con deep learning ha permitido que los agentes autónomos aprendan tareas complejas a través de prueba y error.</li>
+                </ul>
+                <div class="graphic-placeholder" id="graphic6">
+                    <img src="./redNeuronal.png" alt="Red neuronal profunda">
+                </div>
+            </section>
+
+            <!-- Section 7: La Era Post-2020 de la IA -->
+            <section id="section7" class="fade-in">
+                <div class="section-header">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h2>La Era Post-2020 de la IA</h2>
+                </div>
+                <p>La Inteligencia Artificial (IA) ha experimentado un crecimiento exponencial en las últimas décadas. Si tuviera que describir la IA post-2020 con una palabra, esa palabra sería "escala". Los modelos de IA que alimentan aplicaciones como ChatGPT, Gemini y MidJourney están en una escala tal que consumen una porción significativa de la electricidad mundial, lo que plantea desafíos no solo tecnológicos, sino también energéticos.</p>
+                
+                <h3>Factores del Crecimiento:</h3>
+                <ul>
+                    <li><strong>Mayor capacidad:</strong> Los modelos de IA ahora son más potentes y capaces de realizar una variedad más amplia de tareas.</li>
+                    <li><strong>Accesibilidad:</strong> El acceso a modelos preentrenados ha democratizado el uso de la IA, lo que permite que equipos pequeños desarrollen aplicaciones sin la necesidad de construir sus propios modelos desde cero.</li>
+                </ul>
+            </section>
+
+            <!-- Section 8: Evolución de los Modelos de IA -->
+            <section id="section8" class="fade-in">
+                <div class="section-header">
+                    <i class="fas fa-book-open"></i>
+                    <h2>Evolución de los Modelos de IA</h2>
+                </div>
+                <p>La evolución de los modelos de Inteligencia Artificial (IA) ha sido notable en las últimas décadas, marcada por avances significativos en el enfoque de la IA simbólica hasta llegar a los modelos fundamentales modernos. Esta evolución se ha dividido en distintas etapas, cada una impulsada por innovaciones en la teoría de la computación y la disponibilidad de recursos tecnológicos.</p>
+                <h3>IA Simbólica (GOFAI)</h3>
+                <p>Los primeros modelos de IA se basaban en sistemas expertos y lógica simbólica, lo que se conoce como Good Old Fashioned AI (GOFAI). Estos modelos eran adecuados para tareas bien definidas y dependían de reglas explícitas para resolver problemas. Sin embargo, la incapacidad para generalizar fuera de las reglas predefinidas limitaba su alcance. La IA simbólica fue el estándar en los primeros años de desarrollo de la IA.</p>
+                <h3>IA Estadística y Machine Learning (ML)</h3>
+                <p>Con la disponibilidad de grandes cantidades de datos y un aumento en la capacidad de cómputo, la IA estadística y el Machine Learning (ML) empezaron a tomar protagonismo. Los modelos estadísticos como los modelos lineales, las máquinas de soporte vectorial (SVM), y las redes neuronales artificiales comenzaron a permitir que las máquinas aprendieran patrones directamente desde los datos sin reglas explícitas.</p>
+                <h3>Deep Learning y Modelos Fundamentales</h3>
+                <p>A medida que el procesamiento de datos se aceleró, la IA dio un paso hacia los modelos de Deep Learning (aprendizaje profundo), que utilizan redes neuronales profundas capaces de aprender representaciones de datos a varios niveles de abstracción. Este enfoque ha sido fundamental en la revolución de la IA moderna, ya que ha permitido avances espectaculares en áreas como el reconocimiento de imágenes, procesamiento de lenguaje natural y juegos.</p>
+                <p>Más recientemente, la emergencia de los modelos fundamentales o foundation models, como los modelos de lenguaje grande (LLMs), ha marcado una nueva fase. Modelos como GPT de OpenAI y BERT de Google han demostrado ser increíblemente potentes en tareas generales sin la necesidad de ser entrenados desde cero para cada tarea específica, abriendo un amplio abanico de aplicaciones y mejorando la eficiencia en la creación de aplicaciones de IA.</p>
+                <div class="graphic-placeholder" id="graphic8">
+                    <p>Infografía: Evolución de los modelos de IA desde los modelos de lenguaje tradicionales hasta los modelos fundamentales</p>
+                </div>
+            </section>
+
+            <!-- Section 9: Usos Comunes de los Modelos Fundamentales -->
+            <section id="section9" class="fade-in">
+                <div class="section-header">
+                    <i class="fas fa-file-alt"></i>
+                    <h2>Usos Comunes de los Modelos Fundamentales</h2>
+                </div>
+                <p>Los modelos fundamentales han revolucionado la IA debido a su capacidad para aprender representaciones de datos en múltiples modalidades (texto, imágenes, audio, etc.) sin necesidad de ser entrenados específicamente para cada tarea. Algunas de las principales aplicaciones de estos modelos incluyen:</p>
+                <h3>Procesamiento de Lenguaje Natural (PLN):</h3>
+                <p>Los modelos de lenguaje grande, como GPT y BERT, son ampliamente utilizados en tareas de PLN como traducción automática, clasificación de texto, análisis de sentimientos y generación de texto. Estas aplicaciones tienen un gran impacto en la automatización de procesos de comunicación, como la creación de contenido, atención al cliente y traducción multilingüe.</p>
+                <h3>Visión por Computador:</h3>
+                <p>Modelos como ResNet y VGG han sido fundamentales para aplicaciones de visión por computador, como el reconocimiento de objetos, la segmentación de imágenes y la detección de anomalías. Estos avances se están utilizando en sectores como la medicina (diagnóstico a partir de imágenes médicas), el transporte (vehículos autónomos) y la seguridad (cámaras de vigilancia inteligentes).</p>
+                <h3>Generación de Contenido Creativo:</h3>
+                <p>Los modelos generativos como GANs (Generative Adversarial Networks) y Transformers han abierto nuevas posibilidades en la creación de contenido visual, audio y texto. En el ámbito de la creación de imágenes o la generación de música, los artistas y diseñadores ahora pueden colaborar con la IA para crear obras innovadoras. También se están utilizando en la creación de videojuegos, donde los NPCs (personajes no jugables) y los entornos pueden ser generados de manera dinámica.</p>
+                <h3>Automatización de Procesos de Negocio:</h3>
+                <p>Los modelos fundamentales también tienen aplicaciones en la automatización de procesos de negocio, como la gestión de inventarios, la predicción de demanda y la optimización de logística. Mediante la implementación de estos modelos, las empresas pueden predecir con mayor precisión las necesidades del mercado y automatizar tareas complejas.</p>
+                <h3>Asistentes Virtuales y Chatbots:</h3>
+                <p>Los modelos de lenguaje también se utilizan en la creación de asistentes virtuales y chatbots que pueden comprender y generar respuestas naturales a consultas humanas. Estos sistemas están presentes en plataformas como Alexa o Siri, y se emplean en servicios de atención al cliente, facilitando la interacción entre las empresas y los consumidores.</p>
+                <div class="graphic-placeholder" id="graphic9">
+                    <p>Infografía: Aplicaciones principales de los modelos fundamentales en diferentes sectores</p>
+                </div>
+            </section>
+
+            <!-- Section 10: Retos y Oportunidades -->
+            <section id="section10" class="fade-in">
+                <div class="section-header">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <h2>Retos y Oportunidades en la Ingeniería de IA</h2>
+                </div>
+                
+                <h3>Adaptación de Modelos</h3>
+                <p>La adaptación de modelos es el proceso de personalizar modelos generales para tareas específicas. Esto se puede hacer de manera sencilla con técnicas como la ingeniería de prompts, que ajusta el comportamiento de un modelo sin necesidad de modificar sus parámetros internos. Sin embargo, para aplicaciones más complejas, puede ser necesario realizar un fine-tuning, es decir, modificar los parámetros del modelo para que se ajuste mejor a un contexto particular.</p>
+
+                <h3>Evaluación y Desempeño</h3>
+                <p>La evaluación de modelos de IA es un desafío importante. Dado que los modelos pueden generar salidas abiertas, predecir el rendimiento y la precisión de estos modelos en tareas del mundo real requiere un enfoque más sofisticado. Es esencial realizar pruebas exhaustivas para asegurar que el modelo cumpla con los objetivos establecidos.</p>
+            </section>
+
+            <!-- Section 11: El Futuro de la IA -->
+            <section id="section11" class="fade-in">
+                <div class="section-header">
+                    <i class="fas fa-crystal-ball"></i>
+                    <h2>El Futuro de la IA y sus Implicaciones</h2>
+                </div>
+                <p>La IA está avanzando rápidamente y se espera que tenga un impacto significativo en una variedad de sectores en los próximos años. Las principales tendencias futuras de la IA incluyen:</p>
+                <h3>IA Multimodal:</h3>
+                <p>Los modelos multimodales que pueden procesar diferentes tipos de datos simultáneamente (texto, imágenes, audio) serán cada vez más comunes. Esto abrirá nuevas posibilidades para aplicaciones como la reconstrucción de escenas 3D a partir de imágenes 2D, la creación de contenido interactivo y la mejora de interfaces de usuario.</p>
+                <h3>IA Explicable (XAI):</h3>
+                <p>A medida que los modelos de IA se vuelven más complejos, también crece la necesidad de que estos modelos sean explicables. La IA explicativa es una tendencia clave que permitirá a los usuarios entender cómo los modelos toman decisiones. Esto es crucial para aplicaciones en campos como la medicina y el sector financiero, donde las decisiones automatizadas deben ser transparentes y comprensibles.</p>
+                <h3>IA en la Salud:</h3>
+                <p>La IA en la salud continuará su expansión, desde el diagnóstico asistido por IA hasta la personalización de tratamientos. Los modelos de IA podrán analizar grandes cantidades de datos médicos, lo que permitirá predecir enfermedades, sugerir tratamientos personalizados y mejorar la precisión de los diagnósticos.</p>
+                <h3>IA en la Sostenibilidad:</h3>
+                <p>La IA para la sostenibilidad es una tendencia emergente, ya que la tecnología puede optimizar el uso de los recursos naturales, mejorar las técnicas agrícolas, gestionar el cambio climático y promover la eficiencia energética. Los modelos de IA pueden prever patrones de consumo y optimizar procesos industriales para reducir las emisiones y el desperdicio de recursos.</p>
+                <h3>Regulaciones de la IA:</h3>
+                <p>Con el crecimiento de la IA, también aumentan las preocupaciones éticas y de privacidad. Se espera que las regulaciones sobre la IA se fortalezcan para garantizar que el desarrollo y uso de la tecnología se realice de manera responsable. La privacidad de los datos y la seguridad cibernética seguirán siendo temas clave de debate y acción.</p>
+                <h3>IA General y AGI (Inteligencia Artificial General):</h3>
+                <p>Aunque todavía estamos lejos de alcanzar una Inteligencia Artificial General (AGI), los avances continúan. Los investigadores trabajan en modelos que imiten capacidades humanas más amplias, no solo en tareas específicas. El progreso hacia una IA más generalizada podría traer consigo una revolución en todos los aspectos de la sociedad.</p>
+                <div class="content-grid">
+                    <div class="content-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Impacto en la Sociedad</h3>
+                        <p>Transformación del mercado laboral y nuevas oportunidades de empleo.</p>
+                    </div>
+                    <div class="content-card">
+                        <i class="fas fa-balance-scale"></i>
+                        <h3>Desafíos Éticos</h3>
+                        <p>Privacidad, equidad y seguridad en la era de la IA.</p>
+                    </div>
+                    <div class="content-card">
+                        <i class="fas fa-flask"></i>
+                        <h3>Innovación</h3>
+                        <p>Nuevas fronteras en medicina, ciencia y tecnología.</p>
+                    </div>
+                </div>
+                <div class="graphic-placeholder" id="graphic11">
+                    <p>Infografía: Tendencias futuras y áreas de impacto de la IA en la sociedad</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- POPUPS DE EJEMPLOS -->
+    <div class="card-popup-overlay" id="popup-overlay"></div>
+    <div class="card-popup" id="popup-industrial">
+        <button class="card-popup-close" onclick="closePopup()"><i class="fas fa-times"></i></button>
+        <h4>Ejemplos de Transformación Industrial</h4>
+        <ul>
+            <li><strong>Robots colaborativos:</strong> Trabajan junto a operarios humanos en líneas de ensamblaje, aumentando la seguridad y eficiencia.</li>
+            <li><strong>Mantenimiento predictivo:</strong> IA que analiza datos de sensores para anticipar fallos en maquinaria y reducir tiempos de inactividad.</li>
+            <li><strong>Optimización logística:</strong> Algoritmos que mejoran rutas de transporte y gestión de inventarios en tiempo real.</li>
+        </ul>
+        <p>La IA en la industria permite reducir costos, mejorar la calidad y aumentar la flexibilidad de la producción.</p>
+    </div>
+    <div class="card-popup" id="popup-eficiencia">
+        <button class="card-popup-close" onclick="closePopup()"><i class="fas fa-times"></i></button>
+        <h4>Ejemplos de Eficiencia</h4>
+        <ul>
+            <li><strong>Gestión energética:</strong> Sistemas inteligentes que ajustan el consumo eléctrico en edificios según la demanda.</li>
+            <li><strong>Optimización de rutas:</strong> IA que calcula las mejores rutas para entregas, reduciendo tiempos y consumo de combustible.</li>
+            <li><strong>Automatización administrativa:</strong> Bots que procesan facturas, correos y tareas repetitivas en empresas.</li>
+        </ul>
+        <p>La eficiencia impulsada por IA libera recursos humanos para tareas de mayor valor y reduce el desperdicio.</p>
+    </div>
+    <div class="card-popup" id="popup-innovacion">
+        <button class="card-popup-close" onclick="closePopup()"><i class="fas fa-times"></i></button>
+        <h4>Ejemplos de Innovación</h4>
+        <ul>
+            <li><strong>Asistentes virtuales:</strong> Aplicaciones que entienden lenguaje natural y ayudan en tareas cotidianas.</li>
+            <li><strong>Diagnóstico médico asistido:</strong> IA que analiza imágenes médicas para detectar enfermedades con alta precisión.</li>
+            <li><strong>Sistemas de recomendación:</strong> Plataformas como Netflix o Amazon que sugieren productos o contenidos personalizados.</li>
+        </ul>
+        <p>La innovación con IA está transformando sectores como la salud, el entretenimiento y los servicios digitales.</p>
+    </div>
+
+    <!-- POPUPS DE JERARQUÍAS DE IA -->
+    <div class="card-popup" id="popup-estrecha">
+        <button class="card-popup-close" onclick="closePopup()"><i class="fas fa-times"></i></button>
+        <h4>IA Estrecha (Narrow AI)</h4>
+        <p>La IA Estrecha está enfocada en tareas específicas y se divide en las siguientes subcategorías:</p>
+        <ul>
+            <li><strong>Machine Learning (Aprendizaje Automático)</strong></li>
+            <li><strong>Deep Learning (Aprendizaje Profundo)</strong></li>
+            <li><strong>Reinforcement Learning (Aprendizaje por Refuerzo)</strong></li>
+        </ul>
+    </div>
+    <div class="card-popup" id="popup-ml">
+        <button class="card-popup-close" onclick="closePopup()"><i class="fas fa-times"></i></button>
+        <h4>Machine Learning (Aprendizaje Automático)</h4>
+        <p>El Machine Learning se divide en dos grandes categorías: supervisado y no supervisado.</p>
+        <ul>
+            <li>Modelos Lineales</li>
+            <li>Árbol de Decisión</li>
+            <li>Máquinas de Vectores de Soporte (SVM)</li>
+            <li>Métodos Bayesianos</li>
+            <li>Redes Neuronales Artificiales</li>
+            <li>K Vecinos Más Cercanos (KNN)</li>
+            <li>Aprendizaje Ensemblado</li>
+        </ul>
+    </div>
+    <div class="card-popup" id="popup-dl">
+        <button class="card-popup-close" onclick="closePopup()"><i class="fas fa-times"></i></button>
+        <h4>Deep Learning (Aprendizaje Profundo)</h4>
+        <p>El Deep Learning es una subcategoría del Machine Learning que se enfoca en redes neuronales profundas.</p>
+        <ul>
+            <li>CNN (Redes Neuronales Convolucionales)</li>
+            <li>RNN (Redes Neuronales Recurrentes)</li>
+            <li>GAN (Generative Adversarial Networks)</li>
+            <li>RBFN (Redes Neuronales Radiales)</li>
+            <li>MLP (Perceptrón Multicapa)</li>
+            <li>SOM (Mapas Auto-Organizados)</li>
+            <li>Autoencoders (Redes para codificación y decodificación de datos)</li>
+        </ul>
+    </div>
+    <div class="card-popup" id="popup-rl">
+        <button class="card-popup-close" onclick="closePopup()"><i class="fas fa-times"></i></button>
+        <h4>Reinforcement Learning (Aprendizaje por Refuerzo)</h4>
+        <p>El Reinforcement Learning se enfoca en la toma de decisiones y optimización a través de recompensas y penalizaciones.</p>
+        <ul>
+            <li>Sarsa</li>
+            <li>Q Learning</li>
+            <li>Policy Gradient</li>
+            <li>A2C/A3C</li>
+            <li>DQN (Deep Q Network)</li>
+            <li>DDPG (Deep Deterministic Policy Gradient)</li>
+            <li>I2A (Inverse to Action)</li>
+        </ul>
+    </div>
 
     <!-- FOOTER -->
     <footer>
-        <p>&copy; 2025 Charla sobre Inteligencia Artificial</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Únete a nosotros</h3>
+                <a href="https://forms.gle/Gb6seGi8Fgao83EKA" target="_blank" class="cta-button"><i class="fas fa-user-plus"></i>Formulario de Registro</a>
+                <p><i class="fas fa-envelope"></i> computer_fibog@unal.edu.co</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Charla sobre Inteligencia Artificial</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
